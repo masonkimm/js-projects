@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(207, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: white 0px 0px 10px;
+  margin-top: 2rem;
+}
+
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 50vh;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container h4 {
+  padding: 1rem;
+}
+.container h2 {
+  padding: 1rem;
+}
+
+.container li {
+  list-style: none;
+  margin: 1.1rem;
+  cursor: pointer;
+}
+.container input {
+  cursor: pointer;
+}
+
+.submitBtn {
+  display: block;
+  width: 120%;
+  height: 100%;
+
+  padding: 2.2rem;
+  border: none;
+  color: white;
+  background-color: rgb(42, 127, 224);
+}
+.submitBtn:hover {
+  color: rgb(215, 228, 140);
+  background-color: rgb(10, 88, 167);
+  cursor: pointer;
+}
+
+.refreshBtn {
+  display: block;
+  width: 120%;
+  height: 120%;
+  bottom: 0;
+  border: none;
+  color: white;
+  background-color: rgb(42, 127, 224);
+}
+
+.container h4 {
+  color: red;
+}
