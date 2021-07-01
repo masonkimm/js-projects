@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #373b69;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 3rem;
+  color: white;
+  background-color: #7b80bc;
+}
+
+.header input {
+  outline: none;
+  min-width: 20%;
+  border: 1px solid rgb(190, 186, 186);
+  border-radius: 17px;
+  background-color: transparent;
+}
+input,
+select,
+textarea {
+  color: white;
+  padding: 0.5rem;
+}
+.header input::placeholder {
+  color: white;
+  padding: 1.5rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.overview {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(77, 91, 90, 0.9);
+  padding: 2rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+  letter-spacing: 1px;
+}
+.overview h4 {
+  display: flex;
+  justify-content: center;
+}
+.movie {
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+#movie__img {
+  max-width: 100%;
+}
+.movie__info {
+  max-width: 100%;
+  overflow-x: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+  letter-spacing: 1px;
+}
+#movie__rating {
+  font-weight: 900;
+}
+.red {
+  color: rgb(215, 86, 86);
+}
+.green {
+  color: rgb(27, 183, 27);
+}
+.orange {
+  color: rgb(234, 177, 71);
+}
+
+@media screen and (max-width: 400px) and (min-width: 350px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
